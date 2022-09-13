@@ -1,0 +1,16 @@
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow.deps.json
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow.runtimeconfig.json
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow.runtimeconfig.dev.json
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow.dll
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow.pdb
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.csproj.AssemblyReference.cache
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.AssemblyInfoInputs.cache
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.AssemblyInfo.cs
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.csproj.CoreCompileInputs.cache
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.dll
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/ref/Money_Flow.dll
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.pdb
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/Money_Flow.genruntimeconfig.cache
+/Users/vaim/Projects/Money_Flow/Money_Flow/bin/Debug/net5.0/Money_Flow
+/Users/vaim/Projects/Money_Flow/Money_Flow/obj/Debug/net5.0/refint/Money_Flow.dll

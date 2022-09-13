@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Professions\" />
+    <None Remove="PlayingField\" />
+    <None Remove="Professions\Abstracts and Interface\" />
+    <None Remove="Cards\" />
+    <None Remove="Game Mechanics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Professions\" />
+    <Folder Include="PlayingField\" />
+    <Folder Include="Professions\Abstracts and Interface\" />
+    <Folder Include="Cards\" />
+    <Folder Include="Game Mechanics\" />
+  </ItemGroup>
+</Project>
