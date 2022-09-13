@@ -29,8 +29,6 @@ namespace Money_Flow
                 Field.fields.TryGetValue(a, out string fieldDescription);
                 Console.WriteLine(fieldDescription);
 
-                //try to track changes
-
                 var isPayout = character.IsPayout();
                 character.IsChariteble();
 
