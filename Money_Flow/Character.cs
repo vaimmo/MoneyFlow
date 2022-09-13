@@ -29,6 +29,8 @@ namespace Money_Flow
             get => CharProfession();
         }
 
+        private static ICharProfession randomCharacter;
+
         public double Money { get; set; }
 
         //get children count 
@@ -90,10 +92,6 @@ namespace Money_Flow
             if (doubleDice != 0)
             {
                 dice += random.Dice();               
-            }
-
-            if (doubleDice != 0)
-            {
                 Console.WriteLine($"Double dice gives you {dice} moves");
                 doubleDice -= 1;
             }
@@ -101,6 +99,7 @@ namespace Money_Flow
             else Console.WriteLine($"Dice gives you {dice} moves");
             
             var nextField = placeOnField + dice;
+
             if (nextField < 24)
             {
                 lastPlaceOnField = placeOnField;
@@ -117,13 +116,22 @@ namespace Money_Flow
 
         public double AddProfessionIncome()
         {
-            return Money = Money + CharacterProfessionInfo.MoneyFlow + CharacterProfessionInfo.ProfessionIncome;
+            if (doubleDice != 0 && payout.IsDoublePayout(placeOnField, lastPlaceOnField))
+            {
+                Console.WriteLine("Double payout");
+                return Money += (2 * CharacterProfessionInfo.MoneyFlow);
+            }
+            else
+            {
+                Console.WriteLine("Payout");
+                return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? Money += CharacterProfessionInfo.MoneyFlow : Money;
+            }
         }
 
-        public double IsPayout()
-        {
-            return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddProfessionIncome() : Money;          
-        }
+        //public double IsPayout()
+        //{
+        //    return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddProfessionIncome() : Money;          
+        //}
 
         public double IsChariteble()
         {

@@ -45,7 +45,7 @@ namespace Money_Flow
 
         private double IncomeCalucaliton()
         {
-            return Investment + Dividends + PassiveIncome + RealEstateBusiness;
+            return ProfessionIncome + Investment + Dividends + PassiveIncome + RealEstateBusiness;
         }
 
         private double OutcomeCalculatuin()
