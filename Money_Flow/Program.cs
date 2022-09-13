@@ -31,8 +31,6 @@ namespace Money_Flow
 
                 var isPayout = character.IsPayout();
 
-                //dwsd
-
                 character.IsChariteble();
 
                 Console.WriteLine(isPayout.ToString());
