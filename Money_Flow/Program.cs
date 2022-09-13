@@ -32,8 +32,6 @@ namespace Money_Flow
                 var isPayout = character.IsPayout();
                 character.IsChariteble();
 
-
-
                 Console.WriteLine(isPayout.ToString());
 
                 Console.WriteLine();

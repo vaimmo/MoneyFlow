@@ -122,12 +122,10 @@ namespace Money_Flow
 
         public double IsPayout()
         {
-            return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddProfessionIncome() : Money;
-            
+            return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddProfessionIncome() : Money;          
         }
 
         public double IsChariteble()
-
         {
             if (charitable.IsCharitableField(placeOnField))
             {
