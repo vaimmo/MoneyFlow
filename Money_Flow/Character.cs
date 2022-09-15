@@ -13,7 +13,8 @@ namespace Money_Flow
         {
             this.name = name;
             placeOnField = 0;
-
+            CharProfession();
+            Money = randomCharacter.Savings;
         }
 
         //character name
@@ -22,14 +23,9 @@ namespace Money_Flow
         public string name;
 
         //character profession
-        public static string Profession => CharacterProfessionInfo.Career; 
+        public static string Profession => randomCharacter.Career; 
 
-        public static ICharProfession CharacterProfessionInfo
-        {
-            get => CharProfession();
-        }
-
-        private static ICharProfession randomCharacter;
+        public static AbstractCharacter randomCharacter;
 
         public double Money { get; set; }
 
@@ -56,9 +52,9 @@ namespace Money_Flow
 
         private int lastPlaceOnField;
 
-        private int doubleDice;
+        public int doubleDice;
 
-        private static ICharProfession CharProfession()
+        private static AbstractCharacter CharProfession()
         {
             var random = new Random();
 
@@ -66,18 +62,18 @@ namespace Money_Flow
             //implement random proffesions method
             return a switch
             {
-                0 => new Constructor(),
-                1 => new Doctor(),
-                2 => new Doorman(),
-                3 => new Lawyer(),
-                4 => new Mecanist(),
-                5 => new Nurse(),
-                6 => new OfficeManager(),
-                7 => new Pilot(),
-                8 => new PoliceOfficer(),
-                9 => new Secretary(),
-                10 => new Teacher(),
-                11 => new TrackDriver(),
+                0 => randomCharacter = new Constructor(),
+                1 => randomCharacter = new Doctor(),
+                2 => randomCharacter = new Doorman(),
+                3 => randomCharacter = new Lawyer(),
+                4 => randomCharacter = new Mecanist(),
+                5 => randomCharacter = new Nurse(),
+                6 => randomCharacter = new OfficeManager(),
+                7 => randomCharacter = new Pilot(),
+                8 => randomCharacter = new PoliceOfficer(),
+                9 => randomCharacter = new Secretary(),
+                10 => randomCharacter = new Teacher(),
+                11 => randomCharacter = new TrackDriver(),
                 _ => throw new NotImplementedException(),
             };
 
@@ -116,8 +112,9 @@ namespace Money_Flow
 
         public double AddIncome()
         {
-            Console.WriteLine("Payout");
-            return Money += CharacterProfessionInfo.MoneyFlow;
+            Console.WriteLine("Payout " + randomCharacter.MoneyFlow);
+
+            return Money += randomCharacter.MoneyFlow;
         }
 
         public double IsPayout()
@@ -125,7 +122,7 @@ namespace Money_Flow
             if (doubleDice != 0 && payout.IsDoublePayout(placeOnField, lastPlaceOnField))
             {
                 Console.WriteLine("Double payout");
-                return Money += (2 * CharacterProfessionInfo.MoneyFlow);
+                return Money += (2 * randomCharacter.MoneyFlow);
             }
             else
             {
@@ -146,7 +143,7 @@ namespace Money_Flow
                     return Money *= 0.9;
                 }
             }
-                return Money;
+            return Money;
         }
     }
 }

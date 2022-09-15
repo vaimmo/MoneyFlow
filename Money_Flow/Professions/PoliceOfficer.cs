@@ -31,7 +31,7 @@ namespace Money_Flow.Professions
 
             CalculChildExpenses = 160;
 
-            Savings = 400;
+            Savings = 520;
 
             HouseMortgage = 46000;
 
