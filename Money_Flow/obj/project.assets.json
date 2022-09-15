@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vaim/Projects/Money_Flow/Money_Flow/Money_Flow.csproj",
+      "projectUniqueName": "/Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/Money_Flow.csproj",
       "projectName": "Money_Flow",
-      "projectPath": "/Users/vaim/Projects/Money_Flow/Money_Flow/Money_Flow.csproj",
+      "projectPath": "/Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/Money_Flow.csproj",
       "packagesPath": "/Users/vaim/.nuget/packages/",
-      "outputPath": "/Users/vaim/Projects/Money_Flow/Money_Flow/obj/",
+      "outputPath": "/Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/vaim/.nuget/NuGet/NuGet.Config"
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

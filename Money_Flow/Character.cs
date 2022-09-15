@@ -114,7 +114,13 @@ namespace Money_Flow
             }
         }
 
-        public double AddProfessionIncome()
+        public double AddIncome()
+        {
+            Console.WriteLine("Payout");
+            return Money += CharacterProfessionInfo.MoneyFlow;
+        }
+
+        public double IsPayout()
         {
             if (doubleDice != 0 && payout.IsDoublePayout(placeOnField, lastPlaceOnField))
             {
@@ -123,15 +129,9 @@ namespace Money_Flow
             }
             else
             {
-                Console.WriteLine("Payout");
-                return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? Money += CharacterProfessionInfo.MoneyFlow : Money;
+                return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddIncome() : Money;
             }
         }
-
-        //public double IsPayout()
-        //{
-        //    return payout.IsPayoutLocation(placeOnField, lastPlaceOnField) ? AddProfessionIncome() : Money;          
-        //}
 
         public double IsChariteble()
         {

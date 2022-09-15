@@ -31,7 +31,7 @@ namespace Money_Flow
                 Field.fields.TryGetValue(a, out string fieldDescription);
                 Console.WriteLine(fieldDescription + " fiels");
 
-                var isPayout = character.AddProfessionIncome();
+                var isPayout = character.AddIncome();
 
                 character.IsChariteble();
 
