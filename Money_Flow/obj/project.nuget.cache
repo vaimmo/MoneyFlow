@@ -1,12 +1,6 @@
-{
-  "version": 2,
-  "dgSpecHash": "LyLypHsgBk8YDY314AcLYHYsYY7Bn+G7R1rCb0jZR1fMEZof1WYNrEYa86jAsH5tZmPDqS9ZBmMM+lyj/2cT/Q==",
-  "success": true,
-  "projectFilePath": "/Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/Money_Flow.csproj",
-  "expectedPackageFiles": [
-    "/Users/vaim/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "/Users/vaim/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.17/microsoft.netcore.app.host.osx-x64.5.0.17.nupkg.sha512",
-    "/Users/vaim/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
-  "logs": []
-}
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+  </packageSources>
+</configuration>
