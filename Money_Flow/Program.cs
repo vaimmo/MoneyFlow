@@ -14,26 +14,29 @@ namespace Money_Flow
             var character = new Character("Vadym");
 
             Console.WriteLine(character.Name);
-            var prof1 = Character.CharacterProfessionInfo;
+            var prof1 = Character.randomCharacter;
             Console.WriteLine(prof1.ToString());
 
-            Console.WriteLine(prof1.FullIncome);
-            Console.WriteLine(prof1.FullExpenses);
-            Console.WriteLine(prof1.MoneyFlow);
+            Console.WriteLine("Income {0}", prof1.FullIncome);
+            Console.WriteLine("Expenses {0}",prof1.FullExpenses);
+            Console.WriteLine("Money Flow {0}", prof1.MoneyFlow);
+            Console.WriteLine($"Now you have {character.Money} $");
 
             for (; ; )
             {
+                Console.WriteLine(prof1.Career);
+
                 var a = character.PlaceOnField;
+
                 Console.WriteLine($"Place on field is {a}");
 
                 Field.fields.TryGetValue(a, out string fieldDescription);
-                Console.WriteLine(fieldDescription);
+                Console.WriteLine(fieldDescription + " field");
 
-                var isPayout = character.IsPayout();
-
+                character.IsPayout();
                 character.IsChariteble();
 
-                Console.WriteLine(isPayout.ToString());
+                 Console.WriteLine($"Now you have {character.Money} $");
 
                 Console.WriteLine();
                 Console.ReadKey();
