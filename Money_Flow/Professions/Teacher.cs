@@ -15,7 +15,7 @@ namespace Money_Flow.Professions
 
             RealEstateBusiness = 0;
 
-            Taxes = 6300;
+            Taxes = 630;
 
             RentPayment = 500;
 
