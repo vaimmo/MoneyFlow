@@ -11,6 +11,8 @@ namespace Money_Flow
 
         public int CardCost { get; set; }
 
+        public int CardId { get; set; }
+
         public Card()
         {
 

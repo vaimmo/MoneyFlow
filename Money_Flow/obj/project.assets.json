@@ -82,7 +82,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/obj/project.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
+      "message": "Problem reading the cache file /Users/vaim/Projects/GIT/MoneyFlow/Money_Flow/obj/project.nuget.cache : Invalid property identifier character: <. Path 'expectedPackageFiles', line 11, position 0."
     }
   ]
 }
